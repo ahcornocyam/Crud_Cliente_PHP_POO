@@ -17,28 +17,6 @@ class Cliente
     private $fone;
 
     /**
-     * Cliente constructor.
-     * @param $nome
-     * @param $sobrenome
-     * @param $idade
-     * @param $cpf
-     * @param $cidade
-     * @param $email
-     * @param $fone
-     */
-    public function __construct($nome, $sobrenome, $idade, $cpf, $cidade, $email, $fone)
-    {
-        $this->nome = $nome;
-        $this->sobrenome = $sobrenome;
-        $this->idade = $idade;
-        $this->cpf = $cpf;
-        $this->cidade = $cidade;
-        $this->email = $email;
-        $this->fone = $fone;
-    }
-
-
-    /**
      * @return mixed
      */
     public function getNome()
@@ -48,10 +26,12 @@ class Cliente
 
     /**
      * @param mixed $nome
+     * @return Cliente
      */
     public function setNome($nome)
     {
         $this->nome = $nome;
+        return $this;
     }
 
     /**
@@ -64,10 +44,12 @@ class Cliente
 
     /**
      * @param mixed $sobrenome
+     * @return Cliente
      */
     public function setSobrenome($sobrenome)
     {
         $this->sobrenome = $sobrenome;
+        return $this;
     }
 
     /**
@@ -80,10 +62,12 @@ class Cliente
 
     /**
      * @param mixed $idade
+     * @return Cliente
      */
     public function setIdade($idade)
     {
         $this->idade = $idade;
+        return $this;
     }
 
     /**
@@ -96,10 +80,12 @@ class Cliente
 
     /**
      * @param mixed $cpf
+     * @return Cliente
      */
     public function setCpf($cpf)
     {
         $this->cpf = $cpf;
+        return $this;
     }
 
     /**
@@ -112,10 +98,12 @@ class Cliente
 
     /**
      * @param mixed $cidade
+     * @return Cliente
      */
     public function setCidade($cidade)
     {
         $this->cidade = $cidade;
+        return $this;
     }
 
     /**
@@ -128,10 +116,12 @@ class Cliente
 
     /**
      * @param mixed $email
+     * @return Cliente
      */
     public function setEmail($email)
     {
         $this->email = $email;
+        return $this;
     }
 
     /**
@@ -144,9 +134,12 @@ class Cliente
 
     /**
      * @param mixed $fone
+     * @return Cliente
      */
     public function setFone($fone)
     {
         $this->fone = $fone;
+        return $this;
     }
+
 }
