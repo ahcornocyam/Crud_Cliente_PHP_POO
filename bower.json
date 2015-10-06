@@ -1,0 +1,27 @@
+{
+  "name": "Crud Clientes",
+  "version": "0.1.0",
+  "description": "Execicio proposto pelo School of Net para uma lIsta de Clientes feita com PHP orientado a objetos",
+  "main": "main.js",
+  "moduleType": [],
+  "keywords": [
+    "PHP",
+    "POO"
+  ],
+  "authors": [
+    "Alexandre Roch"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "animate.css": "~3.4.0"
+  }
+}
