@@ -8,6 +8,7 @@
  */
 class Cliente
 {
+    private $id;
     private $nome;
     private $sobrenome;
     private $idade;
@@ -17,12 +18,53 @@ class Cliente
     private $fone;
 
     /**
+     * Cliente constructor.
+     * @param $nome
+     * @param $sobrenome
+     * @param $idade
+     * @param $cpf
+     * @param $cidade
+     * @param $email
+     * @param $fone
+     */
+    public function __construct($id, $nome, $sobrenome, $idade, $cpf, $cidade, $email, $fone)
+    {
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->sobrenome = $sobrenome;
+        $this->idade = $idade;
+        $this->cpf = $cpf;
+        $this->cidade = $cidade;
+        $this->email = $email;
+        $this->fone = $fone;
+    }
+
+    /**
      * @return mixed
      */
     public function getNome()
     {
         return $this->nome;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     * @return Cliente
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
 
     /**
      * @param mixed $nome
