@@ -18,21 +18,21 @@
         <tbody>
         <?php foreach($lista as $cliente):?>
             <tr class="trClick">
-                <td data-id="<?=$cliente->getId()?>"><?=$cliente->getId();?></td>
-                <td><?=$cliente->getNome();?></td>
-                <td><?=$cliente->getSobrenome();?></td>
-                <td><?=$cliente->getIdade();?></td>
-                <td><?=$cliente->getCpf();?></td>
-                <td><?=$cliente->getCidade();?></td>
-                <td><?=$cliente->getEmail();?></td>
-                <td><?=$cliente->getFone();?></td>
+                <td data-id="<?=$cliente->getId()?>"><?=$cliente->getId()?></td>
+                <td><?=$cliente->getNome()?></td>
+                <td><?=$cliente->getSobrenome()?></td>
+                <td><?=$cliente->getIdade()?></td>
+                <td><?=$cliente->getCpf()?></td>
+                <td><?=$cliente->getCidade()?></td>
+                <td><?=$cliente->getEmail()?></td>
+                <td><?=$cliente->getFone()?></td>
             </tr>
-        <?php endforeach; ?>
+        <?php endforeach ?>
         </tbody>
 
         <tfoot class="text-center">
         <tr>
-            <td colspan="7">Temos registrados <?=TOTALCLIENTES?> Clientes</td>
+            <td colspan="8">Temos registrados <?=TOTALCLIENTES?> Clientes</td>
         </tr>
         </tfoot>
     </table>

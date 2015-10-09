@@ -11,7 +11,6 @@ require_once"Cliente.php";
 class ClienteFactory
 {
     private $clientes = [];
-    private $cliente;
 
     /**
      * ClienteFactory constructor.
@@ -104,22 +103,36 @@ class ClienteFactory
     }
 
 
+    /*
+     * Lista todos os Clientes
+     */
     public function listaClientes(){
         return $this->clientes;
     }
 
+    /*
+     * Adiciona os Clientes em um array
+     */
     public function addCliente($valor){
         array_push($this->clientes,$valor);
     }
+    /*
+     * Ordena em ordem Crescente baseado pelo Id do Cliente
+     */
     public function ordemCrescente(){
         return asort($this->clientes);
     }
+    /*
+     * Ordena em ordem Decrescente baseado pelo Id do Cliente
+    */
     public function ordemDecrescente(){
         return arsort($this->clientes);
     }
-
+    /*
+     * faz uma pesquisa pegando id do cliente
+     */
     public function pesquisaCliente($id){
-        $cliente = null;
+
         foreach($this->clientes as $item){
             (in_array($id,(array) $item) == true)? $cliente = $item : null ;
         }
