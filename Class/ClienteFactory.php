@@ -118,4 +118,12 @@ class ClienteFactory
         return arsort($this->clientes);
     }
 
+    public function pesquisaCliente($id){
+        $cliente = null;
+        foreach($this->clientes as $item){
+            (in_array($id,(array) $item) == true)? $cliente = $item : null ;
+        }
+        return $cliente;
+    }
+
 }
