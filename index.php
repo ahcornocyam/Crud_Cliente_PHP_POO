@@ -2,7 +2,7 @@
 	require_once "Class/ClienteFactory.php";
 	$clientes = new ClienteFactory();
 
-    (!isset($_GET['cliente']) || $_GET['cliente'] <= 0)? $includePg = "lista.php" : $includePg = "descricao.php";
+    (!isset($_GET['cliente']) || $_GET['cliente'] < 0)? $includePg = "lista.php" : $includePg = "descricao.php";
 
 	if (!isset($_GET['ordem']) || $_GET['ordem'] == 1) {
 		$_GET['ordem'] = $ordem = 0;

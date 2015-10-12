@@ -1,8 +1,9 @@
 $(document).ready(function () {
    var tr = $(".trClick");
-    tr.click(function () {
-        var id = $(this).find("td[data-Id]").data('id'),
-            url = location.href,
+
+    tr.on('click',function () {
+        var id = $(this).find("td[data-Id]").data('id'),//pegando o id da talbela de lista de clientes
+            url = location.href, //pegando a url
             result = null;
 
         if(url.indexOf('?') > 0){
